@@ -37,6 +37,10 @@ header {
   height: 4rem;
   border-bottom: gray solid .5px;
 }
+.section-block {
+  text-align: center;
+  margin-top: 2rem; 
+}
 .navigation li{
   margin: 1rem;
 }
@@ -68,8 +72,13 @@ header {
   height: auto;
 }
 #banner-text {
-  padding-right: 4.5rem;
-  margin: auto 0;
+  width: 40%;
+  justify-content: center;
+}
+#banner-text h1, 
+#banner-text h2,
+#banner-text button {
+  margin-right: 4.5rem;
 }
 #banner-text button {
   width: 50%;
@@ -94,4 +103,28 @@ header {
   width: 60%;
   height: auto;
   margin-right: 5px;
+}
+/*Course Section*/
+.course {
+  margin-top: 2rem;
+  background-color: chartreuse
+}
+.catalog {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 1rem 3.5rem;
+}
+.offer {
+/*  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;*/
+  max-width: 31%;
+  background-color: white;
+  height: auto;
+  margin: 1rem 1rem;
+}
+.offer img {
+  width: 100%;
+  height: auto;
 }
