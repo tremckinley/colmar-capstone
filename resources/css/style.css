@@ -29,6 +29,17 @@ margin-bottom: 2rem;
 strong {
   font-weight: bold;
 }
+.button {
+  width: auto;
+  height: auto;
+  padding: 0.5rem 0;
+  background-color: grey;
+  color: whitesmoke;
+  text-align: center
+}
+.button-link {
+  text-decoration: none;
+}
 /*Section Styles*/
 /*Header*/
 header {
@@ -86,7 +97,7 @@ header {
 }
 #banner-text h1, 
 #banner-text h2,
-#banner-text button {
+#banner-text a {
   margin-right: 4.5rem;
 }
 #banner-text button {
