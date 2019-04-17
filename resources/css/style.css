@@ -12,7 +12,8 @@ h2 {
   font-weight: 400;
 }
 section {
-
+margin-top: 2rem;
+margin-bottom: 2rem;
 }
 .contain {
   display: flex;
@@ -31,6 +32,10 @@ strong {
 /*Section Styles*/
 /*Header*/
 header {
+  position:fixed;
+  width: 100%;
+  margin-top: 0;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,15 +59,19 @@ header {
 /*Banner*/
 .banner{
   background-color: khaki;
+  padding-top: 4rem;
+  margin-bottom: 2rem;
 }
 .col-left {
   width: 60%;
   height: auto;
 }
-.col-left img{
+.col-left img,
+.col-left video{
   display: flex;
   width: 100%;
   height: auto;
+  max-height: 100%;
   margin: 0 auto;
 }
 .col-right {
@@ -84,8 +93,11 @@ header {
   width: 50%;
   margin: 1rem 0;
 }
-#info-caption {
+.media-caption {
   margin: 2rem 0 1.5rem 0;
+}
+.information {
+  margin-bottom: 1rem;
 }
 .list-item.col-left {
   height: auto;
@@ -94,6 +106,7 @@ header {
 .sub-column {
   display: flex;
   border: grey 1px solid;
+  max-height: 33%;
 }
 .list-item.col-left{
   width: 35%;
@@ -107,7 +120,8 @@ header {
 /*Course Section*/
 .course {
   margin-top: 2rem;
-  background-color: chartreuse
+  background-color: chartreuse;
+  padding-bottom: 1rem;
 }
 .catalog {
   display: flex;
@@ -116,9 +130,6 @@ header {
   margin: 1rem 3.5rem;
 }
 .offer {
-/*  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;*/
   max-width: 31%;
   background-color: white;
   height: auto;
@@ -127,4 +138,17 @@ header {
 .offer img {
   width: 100%;
   height: auto;
+}
+/*Footer*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: bisque;
+}
+.terms li{
+  margin: 1rem 1rem;
+}
+.terms li:last-child {
+  padding-right: 1.5rem
 }
