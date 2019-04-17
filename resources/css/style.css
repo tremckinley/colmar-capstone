@@ -57,10 +57,10 @@ header {
   text-align: center;
   margin-top: 2rem; 
 }
-.navigation li{
-  margin: 1rem;
+.navigation a{
+  margin: 0.5rem;
 }
-.navigation li:last-child {
+.navigation a:last-child {
   margin-right: 1.5rem;
 }
 .logo-left span{
