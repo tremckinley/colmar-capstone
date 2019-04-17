@@ -11,12 +11,19 @@ h2 {
   font-size: 1.5rem;
   font-weight: 400;
 }
+section {
+
+}
 .contain {
   display: flex;
   padding-left: 1.5rem;
 }
-.two-col{
+.two-col {
   padding: 2rem 0 2rem 1.5rem;
+}
+.list-item {
+  padding: 1rem 0 1rem 1rem;
+  justify-content: center;
 }
 strong {
   font-weight: bold;
@@ -55,7 +62,10 @@ header {
   margin: 0 auto;
 }
 .col-right {
+  display: flex;
   flex-direction: column;
+  width: 40%;
+  height: auto;
 }
 #banner-text {
   padding-right: 4.5rem;
@@ -64,5 +74,24 @@ header {
 #banner-text button {
   width: 50%;
   margin: 1rem 0;
-
+}
+#info-caption {
+  margin: 2rem 0 1.5rem 0;
+}
+.list-item.col-left {
+  height: auto;
+  width: 60%;
+}
+.sub-column {
+  display: flex;
+  border: grey 1px solid;
+}
+.list-item.col-left{
+  width: 35%;
+  height: auto;
+}
+.list-item.col-right{
+  width: 60%;
+  height: auto;
+  margin-right: 5px;
 }
