@@ -1,0 +1,68 @@
+/*Universal Styles*/
+html {
+  font-size: 16px;
+  width: 100%;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.contain {
+  display: flex;
+  padding-left: 1.5rem;
+}
+.two-col{
+  padding: 2rem 0 2rem 1.5rem;
+}
+strong {
+  font-weight: bold;
+}
+/*Section Styles*/
+/*Header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  border-bottom: gray solid .5px;
+}
+.navigation li{
+  margin: 1rem;
+}
+.navigation li:last-child {
+  margin-right: 1.5rem;
+}
+.logo-left span{
+  font-size: 2rem;
+  margin: auto 0;
+}
+/*Banner*/
+.banner{
+  background-color: khaki;
+}
+.col-left {
+  width: 60%;
+  height: auto;
+}
+.col-left img{
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.col-right {
+  flex-direction: column;
+}
+#banner-text {
+  padding-right: 4.5rem;
+  margin: auto 0;
+}
+#banner-text button {
+  width: 50%;
+  margin: 1rem 0;
+
+}
