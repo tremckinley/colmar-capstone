@@ -95,6 +95,10 @@ nav a:last-child {
   .logo-left span {
     display: none;
   }
+  header {
+    height: 2rem;
+    padding-top: .5rem;
+  }
   nav a span {
     display: none;
   }
@@ -106,10 +110,8 @@ nav a:last-child {
   }
 }
 
-/*Banner & Thesis*/
+/*Banner Section*/
 .banner{
-  background-color: khaki;
-  padding-top: 4rem;
   margin-bottom: 2rem;
 }
 .col-left img,
@@ -133,13 +135,30 @@ nav a:last-child {
   width: 50%;
   margin: 1rem 0;
 }
-.video-caption {
-  margin: 2rem 0 1.5rem 0;
+
+/*Mobile Banner*/
+@media only screen and (max-width: 629px) {
+  .banner .two-col.contain {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .two-col.contain .col-left, #banner-text {
+    width: 100%;
+  }
+  .col-right.contain {
+    padding: 2rem 1rem;
+  }
 }
 
-/*Information Section*/
+
+/*Information & Thesis Sections*/
 .information {
   margin-bottom: 1rem;
+}
+.exhibit {
+  margin-bottom: 2rem;
 }
 .list-item.col-left {
   height: auto;
@@ -159,6 +178,9 @@ nav a:last-child {
   height: auto;
   margin-right: 5px;
 }
+.video-caption {
+  margin: 2rem 0 1.5rem 0;
+}
 @media only screen and (min-width: 630px) {
   .mobile {
     display: none;
@@ -176,7 +198,7 @@ nav a:last-child {
   .mobile {
     display: flex;
   }
-  #info-right .sub-column {
+  .sub-column {
     flex-direction: column;
     padding: 1rem;
   }
@@ -190,23 +212,23 @@ nav a:last-child {
   #info-left {
     display: none;
   }
+
+/*Mobile Thesis*/
+.exhibit {
+  margin-bottom: 1rem;
+}  
+.thesis .contain {
+  padding: 0;
+}
+#thesis-right, #thesis-left h1, #thesis-left p {
+  display: none;
+}
+  #thesis-left {
+    width: auto;
+  }
 }
 
-/*Mobile Banner*/
-@media only screen and (max-width: 629px) {
-  .banner .two-col.contain {
-    flex-direction: column;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .two-col.contain .col-left, #banner-text {
-    width: 100%;
-  }
-  .col-right.contain {
-    padding: 2rem 1rem;
-  }
-}
+
 
 /*Course Section*/
 .course {
@@ -258,7 +280,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: bisque;
+  border: 1px gray solid;
 }
 .terms li{
   margin: 1rem 1rem;
@@ -266,3 +288,17 @@ footer {
 .terms li:last-child {
   padding-right: 1.5rem
 }
+
+ /*Footer Mobile*/
+ @media only screen and (max-width: 629px) {
+   footer .logo-left {
+     font-size: 0.75rem;
+   }
+
+ }
+
+ /*Font Names
+font-family: 'Alegreya Sans SC', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
