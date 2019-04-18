@@ -190,7 +190,6 @@ nav a:last-child {
   #info-left {
     display: none;
   }
-
 }
 
 /*Mobile Banner*/
@@ -212,7 +211,6 @@ nav a:last-child {
 /*Course Section*/
 .course {
   margin-top: 2rem;
-  background-color: chartreuse;
   padding-bottom: 1rem;
 }
 .catalog {
@@ -230,6 +228,29 @@ nav a:last-child {
 .offer img {
   width: 100%;
   height: auto;
+}
+
+/*Mobile Section*/
+@media only screen and (max-width: 629px) {
+  .catalog {
+    margin: 0;
+    flex-direction: column;
+    align-content: stretch;
+  }
+  .course .section-block {
+    margin-bottom: 2rem;
+  }
+  .offer {
+    display: flex;
+    margin: 0.25rem 1rem;
+    padding: 1rem 1rem 1.5rem 1rem;
+    width: auto;
+    max-width: none;
+    background-color: lightgray;
+  }
+  .offer img, .offer p {
+    display: none;
+  }
 }
 
 /*Footer*/
