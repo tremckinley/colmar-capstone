@@ -22,6 +22,16 @@ margin-bottom: 2rem;
 .two-col {
   padding: 2rem 0 2rem 1.5rem;
 }
+.col-left {
+  width: 60%;
+  height: auto;
+}
+.col-right {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+}
 .list-item {
   padding: 1rem 0 1rem 1rem;
   justify-content: center;
@@ -40,6 +50,11 @@ strong {
 .button-link {
   text-decoration: none;
 }
+.section-block {
+  text-align: center;
+  margin-top: 2rem; 
+}
+
 /*Section Styles*/
 /*Header*/
 header {
@@ -53,29 +68,49 @@ header {
   height: 4rem;
   border-bottom: gray solid .5px;
 }
-.section-block {
-  text-align: center;
-  margin-top: 2rem; 
+#header-link {
+  text-decoration: none;
 }
-.navigation a{
-  margin: 0.5rem;
+nav a{
+  margin: .5rem;
 }
-.navigation a:last-child {
+nav a:last-child {
   margin-right: 1.5rem;
 }
 .logo-left span{
   font-size: 2rem;
   margin: auto 0;
 }
-/*Banner*/
+.mobile-icon {
+  position: relative;
+}
+@media only screen and (min-width: 630px) {
+  .button-link img {
+    display: none;
+  }
+}
+
+/*Mobile Header Style*/
+@media only screen and (max-width: 629px) {
+  .logo-left span {
+    display: none;
+  }
+  nav a span {
+    display: none;
+  }
+  nav a:nth-child(3) {
+    display: none;
+  }
+  header {
+    justify-content: space-evenly;
+  }
+}
+
+/*Banner & Thesis*/
 .banner{
   background-color: khaki;
   padding-top: 4rem;
   margin-bottom: 2rem;
-}
-.col-left {
-  width: 60%;
-  height: auto;
 }
 .col-left img,
 .col-left video{
@@ -84,12 +119,6 @@ header {
   height: auto;
   max-height: 100%;
   margin: 0 auto;
-}
-.col-right {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  height: auto;
 }
 #banner-text {
   width: 40%;
@@ -104,7 +133,7 @@ header {
   width: 50%;
   margin: 1rem 0;
 }
-.media-caption {
+.video-caption {
   margin: 2rem 0 1.5rem 0;
 }
 .information {
@@ -128,6 +157,23 @@ header {
   height: auto;
   margin-right: 5px;
 }
+
+/*Mobile Banner*/
+@media only screen and (max-width: 629px) {
+  .banner .two-col.contain {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .two-col.contain .col-left, #banner-text {
+    width: 100%;
+  }
+  .col-right.contain {
+    padding: 2rem 1rem;
+  }
+}
+
 /*Course Section*/
 .course {
   margin-top: 2rem;
@@ -150,6 +196,7 @@ header {
   width: 100%;
   height: auto;
 }
+
 /*Footer*/
 footer {
   display: flex;
