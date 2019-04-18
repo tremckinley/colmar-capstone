@@ -136,6 +136,8 @@ nav a:last-child {
 .video-caption {
   margin: 2rem 0 1.5rem 0;
 }
+
+/*Information Section*/
 .information {
   margin-bottom: 1rem;
 }
@@ -156,6 +158,39 @@ nav a:last-child {
   width: 60%;
   height: auto;
   margin-right: 5px;
+}
+@media only screen and (min-width: 630px) {
+  .mobile {
+    display: none;
+  }
+}
+
+/*Mobile Information*/
+@media only screen and (max-width: 629px) {
+  .information .contain,
+  #info-right {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .mobile {
+    display: flex;
+  }
+  #info-right .sub-column {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .desktop {
+    display: none;
+  }
+  .sub-column .list-item:nth-child(2) {
+    width: 100%;
+    padding: 0;
+  }
+  #info-left {
+    display: none;
+  }
+
 }
 
 /*Mobile Banner*/
