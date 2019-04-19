@@ -68,8 +68,12 @@ strong {
   border: #000 1px solid;
   border-radius: 5px;
 }
+.button:active {
+  background-color: #a52a2a;
+}
 .button-link {
   text-decoration: none;
+  width: 80%;
 }
 .section-block {
   text-align: center;
@@ -82,6 +86,7 @@ strong {
   background-color: #CDA3D7;
   border: #a52a2a 5px solid;
   padding-bottom: 2rem;
+  border-radius: 5px;
 }
 /*Section Styles*/
 /*Header*/
@@ -95,6 +100,7 @@ header {
   align-items: center;
   height: 4rem;
   border-bottom: #a52a2a 3px solid;
+  z-index: 2;
 }
 header a {
   color: #000;
@@ -103,12 +109,19 @@ header a {
   font-family: 'Alegreya Sans SC', 'Times New Roman', serif;
   word-spacing: 10rem;
   text-decoration: none;
+  background: rgba(236, 218, 114, .7);
+  border-radius: 0px 0px 400px 0px;
+  padding-right: 1rem;
 }
 nav a{
   font-family: 'Alegreya Sans SC', 'Times New Roman', serif;
   font-size: 1rem;
   font-weight: bold;
   margin: .5rem;
+  padding: .4rem;
+  background-color: #ecda72;
+  border: #a52a2a 1px solid;
+  border-radius: 10px;
 }
 nav a:active {
   color: #a52a2a;
@@ -130,14 +143,14 @@ nav a:last-child {
 .button-link img {
   border: none;
 }
-@media only screen and (min-width: 630px) {
+@media only screen and (min-width: 680px) {
   .button-link img {
     display: none;
   }
 }
 
 /*Mobile Header Style*/
-@media only screen and (max-width: 629px) {
+@media only screen and (max-width: 679px) {
   .logo-left span {
     display: none;
   }
@@ -145,8 +158,14 @@ nav a:last-child {
     height: 2rem;
     padding-top: .5rem;
   }
+  nav a {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+
+  }
   nav a span {
-    display: none;
+    display: none;  
   }
   nav a:nth-child(3) {
     display: none;
@@ -157,9 +176,7 @@ nav a:last-child {
 }
 
 /*Banner Section*/
-.banner{
-  color: black;
-}
+
 .banner .col-left img {
   border-left: #a52a2a 3px solid;
   border-top: #a52a2a 3px solid;
@@ -175,6 +192,7 @@ nav a:last-child {
 #banner-text {
   width: 40%;
   justify-content: center;
+}
 }
 #banner-text h1, 
 #banner-text h2,
@@ -194,11 +212,20 @@ nav a:last-child {
     margin: 0;
     padding: 0;
   }
-  .two-col.contain .col-left, #banner-text {
+  .two-col.contain .col-left {
     width: 100%;
   }
   .col-right.contain {
     padding: 2rem 0rem 2rem 1rem;
+  }
+  #banner-text {
+    width: auto;
+    border: none;
+    border-radius: 0;
+  }
+  .banner .col-left img {
+    padding-top: 1.5rem;
+    border: none;
   }
 }
 
@@ -206,6 +233,12 @@ nav a:last-child {
 /*Information & Thesis Sections*/
 .information {
   margin-bottom: 1rem;
+}
+.info-caption{
+  padding-left: 1rem;
+  color: #000;
+  background: rgba(236, 218, 114, .7);
+  border-radius: 0px 0px 400px 0px;
 }
 .exhibit {
   margin-bottom: 2rem;
@@ -218,6 +251,7 @@ nav a:last-child {
   background-color: #639B1A;
   color: black;
   margin: 1px 0;
+  border-radius: 50px 0px 0px 50px;
 }
 .list-item.col-left{
   width: 35%;
@@ -233,6 +267,8 @@ nav a:last-child {
 }
 .video-caption {
   margin: 2rem 0 1.5rem 0;
+  background: rgba(236, 218, 114, .7);
+  border-radius: 0px 0px 400px 0px;
 }
 #testify {
   font-weight: 300;
@@ -240,6 +276,9 @@ nav a:last-child {
 @media only screen and (min-width: 630px) {
   .mobile {
     display: none;
+  }
+  .sub-column:hover {
+    margin-left: 10px;
   }
 }
 
@@ -257,6 +296,8 @@ nav a:last-child {
   .sub-column {
     flex-direction: column;
     padding: 1rem;
+    border: #a52a2a 5px solid;
+    border-radius: 5px;
   }
   .desktop {
     display: none;
@@ -281,6 +322,11 @@ nav a:last-child {
 }
   #thesis-left {
     width: auto;
+    padding-bottom: 0;  
+    border: none;
+  }
+  video {
+    border: none;
   }
 }
 
@@ -290,6 +336,7 @@ nav a:last-child {
 .course {
   margin-top: 2rem;
   padding-bottom: 1rem;
+
 }
 .catalog {
   opacity: 1;
@@ -298,9 +345,15 @@ nav a:last-child {
   justify-content: center;
   max-width: 100%;
   margin: 1rem 3.5rem;
+
 }
 .offer-caption p {
   font-size: 1rem;
+}
+.offer-caption h2 {
+  background: rgba(236, 218, 114, .7);
+  border-radius: 0px 0px 500px 0px;
+
 }
 .offer {
   background-color: #CDA3D7;
@@ -308,6 +361,9 @@ nav a:last-child {
   height: auto;
   margin: 1rem 1rem;
   max-width: 25%;
+}
+.offer:hover {
+  opacity: 0.7;
 }
 .offer img {
   max-width: 100%;
