@@ -10,6 +10,7 @@ h1 {
   font-family: 'Alegreya Sans SC', 'Times New Roman', serif;
   font-size: 4rem;
   font-weight: bold;
+  margin-bottom: 1rem;
 }
 h2 {
   font-family: 'Ubuntu', Helvetica, sans-serif;
@@ -60,9 +61,12 @@ strong {
   width: auto;
   height: auto;
   padding: 0.5rem 0;
-  background-color: grey;
-  color: whitesmoke;
-  text-align: center
+  background-color: #639B1A;
+  color: #ffffff;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  border: #000 1px solid;
+  border-radius: 5px;
 }
 .button-link {
   text-decoration: none;
@@ -92,6 +96,9 @@ header {
   height: 4rem;
   border-bottom: #a52a2a 3px solid;
 }
+header a {
+  color: #000;
+}
 #header-link {
   font-family: 'Alegreya Sans SC', 'Times New Roman', serif;
   word-spacing: 10rem;
@@ -103,12 +110,16 @@ nav a{
   font-weight: bold;
   margin: .5rem;
 }
+nav a:active {
+  color: #a52a2a;
+}
 nav a:last-child {
   margin-right: 1.5rem;
 }
 .logo-left span{
   font-size: 2rem;
   margin: auto 0;
+  color: #000;
 }
 .logo-left img {
   border: none;
@@ -199,10 +210,6 @@ nav a:last-child {
 .exhibit {
   margin-bottom: 2rem;
 }
-.list-item.col-left {
-  height: auto;
-  width: 60%;
-}
 .sub-column {
   display: flex;
   border: #a52a2a 5px solid;
@@ -211,7 +218,6 @@ nav a:last-child {
   background-color: #639B1A;
   color: black;
   margin: 1px 0;
-
 }
 .list-item.col-left{
   width: 35%;
@@ -221,6 +227,9 @@ nav a:last-child {
   width: 60%;
   height: auto;
   margin-right: 5px;
+}
+.list-item.col-right a {
+  margin-top: 1rem;
 }
 .video-caption {
   margin: 2rem 0 1.5rem 0;
@@ -283,6 +292,7 @@ nav a:last-child {
   padding-bottom: 1rem;
 }
 .catalog {
+  opacity: 1;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
