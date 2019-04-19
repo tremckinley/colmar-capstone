@@ -2,10 +2,9 @@
 html {
   font-size: 16px;
   width: 100%;
-  color: #fff
 }
 body {
-  background-color: rgb(167, 153, 28);
+  background-color: rgb(207, 192, 56);
 }
 h1 {
   font-family: 'Alegreya Sans SC', 'Times New Roman', serif;
@@ -59,14 +58,14 @@ strong {
   font-weight: bold;
 }
 .button {
-  width: 80%;
+  width: auto;
   height: auto;
   padding: 0.5rem 0;
-  background-color: #0f7918;
+  background-color: #639B1A;
   color: #ffffff;
   font-family: 'Ubuntu', sans-serif;
   text-align: center;
-  border: #a52a2a 1px solid;
+  border: #000 1px solid;
   border-radius: 5px;
 }
 .button:active {
@@ -79,24 +78,19 @@ strong {
 .section-block {
   text-align: center;
   margin-top: 2rem;
-  background-color: #5e1670;
+  background-color: #CDA3D7;
   border-top: #a52a2a 3px solid;
   border-bottom: #a52a2a 3px solid;
 }
 #banner-text, #info-left, #thesis-left {
-  background-color: #5e1670;
+  background-color: #CDA3D7;
   border: #a52a2a 5px solid;
   padding-bottom: 2rem;
   border-radius: 5px;
 }
 .bkgrnd {
   background: rgba(236, 218, 114, .7);
-  color: #000;
   border-radius: 0px 0px 400px 0px;
-}
-.info-caption.bkgrnd,
-.video-caption.bkgrnd, #info-text, #banner-text h1 {
-  padding-left: 1rem;
 }
 /*Section Styles*/
 /*Header*/
@@ -104,7 +98,7 @@ header {
   position:fixed;
   width: 100%;
   margin-top: 0;
-  background-color: #0f7918;
+  background-color: #639B1A;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -133,9 +127,6 @@ nav a{
 }
 nav a:active {
   color: #a52a2a;
-}
-nav a:hover {
-  background-color: #E083AA;
 }
 nav a:last-child {
   margin-right: 1.5rem;
@@ -204,19 +195,16 @@ nav a:last-child {
   width: 40%;
   justify-content: center;
   border-right:  #a52a2a 2px solid;;
-  padding-left: 0;
-} 
+}
+#banner-text h1, 
 #banner-text h2,
 #banner-text a {
   margin-right: 4.5rem;
 }
 #banner-text button {
   width: 50%;
-  margin: 1rem 0rem;
+  margin: 1rem 0;
 }
-.banner-pad {
-  padding-left: 1rem;
-} 
 
 /*Mobile Banner*/
 @media only screen and (max-width: 988px) {
@@ -237,7 +225,6 @@ nav a:last-child {
     border: none;
     border-radius: 0;
   }
-
   .banner .col-left img {
     padding-top: 1.5rem;
     border: none;
@@ -249,6 +236,10 @@ nav a:last-child {
 .information {
   margin-bottom: 1rem;
 }
+.info-caption{
+  padding-left: 1rem;
+  color: #000;
+}
 .exhibit {
   margin-bottom: 2rem;
 }
@@ -257,8 +248,8 @@ nav a:last-child {
   border: #a52a2a 5px solid;
   border-right: none;
   max-height: 33%;
-  background-color: #0f7918;
-  color: #fff;
+  background-color: #639B1A;
+  color: black;
   margin: 1px 0;
   border-radius: 50px 0px 0px 50px;
 }
@@ -361,7 +352,7 @@ nav a:last-child {
   font-size: 1rem;
 }
 .offer {
-  background-color: #5e1670;
+  background-color: #CDA3D7;
   border: #a52a2a solid 2px;
   height: auto;
   margin: 1rem 1rem;
@@ -409,7 +400,7 @@ nav a:last-child {
 /*Footer*/
 footer {
   display: flex;
-  background-color: #0f7918;
+  background-color: #639B1A;
   justify-content: space-between;
   align-items: center;
   border-top: #a52a2a 3px solid;
