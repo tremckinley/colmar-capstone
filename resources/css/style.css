@@ -88,6 +88,10 @@ strong {
   padding-bottom: 2rem;
   border-radius: 5px;
 }
+.bkgrnd {
+  background: rgba(236, 218, 114, .7);
+  border-radius: 0px 0px 400px 0px;
+}
 /*Section Styles*/
 /*Header*/
 header {
@@ -109,8 +113,6 @@ header a {
   font-family: 'Alegreya Sans SC', 'Times New Roman', serif;
   word-spacing: 10rem;
   text-decoration: none;
-  background: rgba(236, 218, 114, .7);
-  border-radius: 0px 0px 400px 0px;
   padding-right: 1rem;
 }
 nav a{
@@ -237,8 +239,6 @@ nav a:last-child {
 .info-caption{
   padding-left: 1rem;
   color: #000;
-  background: rgba(236, 218, 114, .7);
-  border-radius: 0px 0px 400px 0px;
 }
 .exhibit {
   margin-bottom: 2rem;
@@ -267,11 +267,12 @@ nav a:last-child {
 }
 .video-caption {
   margin: 2rem 0 1.5rem 0;
-  background: rgba(236, 218, 114, .7);
-  border-radius: 0px 0px 400px 0px;
 }
 #testify {
   font-weight: 300;
+}
+.desktop img {
+  border-radius: 10px 0 0 10px;
 }
 @media only screen and (min-width: 630px) {
   .mobile {
@@ -299,7 +300,7 @@ nav a:last-child {
     border: #a52a2a 5px solid;
     border-radius: 5px;
   }
-  .desktop {
+  .desktop img {
     display: none;
   }
   .sub-column .list-item:nth-child(2) {
@@ -349,11 +350,6 @@ nav a:last-child {
 }
 .offer-caption p {
   font-size: 1rem;
-}
-.offer-caption h2 {
-  background: rgba(236, 218, 114, .7);
-  border-radius: 0px 0px 500px 0px;
-
 }
 .offer {
   background-color: #CDA3D7;
