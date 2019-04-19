@@ -173,7 +173,9 @@ nav a:last-child {
     background-color: transparent;
     border: none;
     border-radius: 0;
-
+  }
+  nav a:hover {
+    background-color: transparent;
   }
   nav a span {
     display: none;  
