@@ -76,8 +76,9 @@ video {
   border: #a52a2a 1px solid;
   border-radius: 5px;
 }
-.button:active {
+.button:hover {
   background-color: #a52a2a;
+  transition: background-color 300ms ease 0s;
 }
 .button-link {
   text-decoration: none;
@@ -141,6 +142,7 @@ nav a:active {
 }
 nav a:hover {
   background-color: #E083AA;
+  transition: background-color 300ms ease 0s;
 }
 nav a:last-child {
   margin-right: 1.5rem;
@@ -181,6 +183,9 @@ nav a:last-child {
     padding-top: .5rem;
     justify-content: space-evenly;
   }
+  #header-link {
+    padding-left: 0rem;
+  }
   nav a {
     background-color: transparent;
     border: none;
@@ -219,7 +224,10 @@ nav a:last-child {
 .banner-pad {
   padding-left: 1rem;
 } 
-
+#banner-text .bkgrnd {
+  color: #000;
+  transition: background-color 1s ease-in 0s;
+}
 /*Mobile Banner*/
 
 /*Break Point for Banner Content*/
@@ -291,7 +299,8 @@ nav a:last-child {
     display: none;
   }
   .sub-column:hover {
-    margin-left: 20px;
+    margin-left: 50px;
+    transition: margin-left 100ms ease-in-out 0s;
   }
 }
 
@@ -343,13 +352,10 @@ nav a:last-child {
   }
 }
 
-
-
 /*Course Section*/
 .course {
 margin-top: 2rem;
 padding-bottom: 1rem;
-
 }
 .catalog {
 opacity: 1;
@@ -358,7 +364,6 @@ flex-flow: row wrap;
 justify-content: center;
 max-width: 100%;
 margin: 1rem 3.5rem;
-
 }
 .offer-caption p {
 font-size: 1rem;
